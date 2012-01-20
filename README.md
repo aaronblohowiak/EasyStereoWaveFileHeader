@@ -1,5 +1,6 @@
 # Easy Stereo Wave-File Header.
 ## The easiest way to write audio files.
+### MIT-license
 
 * Trivial to use WAV-file output!
 * Created by Aaron Blohowiak on 11/15/11
@@ -29,3 +30,11 @@ Here is an easy example of how to use this to write some uint16_t audio samples 
 
     fclose(file);
 
+
+## Alternatives:
+
+On Osx, *nix:
+  libsndfile (http://www.mega-nerd.com/libsndfile/) offers reading **and** writing.  Installs system-wide and is quite large.  Pretty easy to use, but GPL
+  
+On Osx:
+  ExtAudioFile, though it is annoying to use if your needs are trivial it does offer lots of flexibility.
