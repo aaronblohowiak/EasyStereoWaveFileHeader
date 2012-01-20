@@ -30,6 +30,9 @@ Here is an easy example of how to use this to write some uint16_t audio samples 
 
     fclose(file);
 
+## TODO:
+
+Rewrite `writeWaveHeaderToFile` to write member-by-member instead of just plopping the whole struct down on the file, to avoid potential issues with padding.
 
 ## Alternatives:
 

@@ -40,7 +40,9 @@ typedef struct waveFormatHeader {
 } waveFormatHeader_t;
 
 //Usually, just use these two functions to create your header and write it out.
+//malloc's and initializes a new header struct
 waveFormatHeader_t * stereo16bit44khzWaveHeaderForLength(size_t numberOfFrames);
+//writes the header to the given file. currently just an fwrite but could be a member-by-member write in the future.
 size_t writeWaveHeaderToFile(waveFormatHeader_t * wh, FILE * file);
 
 //if you want to create the header but set its length at a later date, you can use this. modifies the contents of wh

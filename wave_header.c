@@ -8,9 +8,9 @@ waveFormatHeader_t * basicHeader(){
     waveFormatHeader_t * wh = malloc(sizeof(waveFormatHeader_t));
     memcpy(wh->ChunkId, &"RIFF", 4);
     memcpy(wh->Format, &"WAVE", 4);
-    memcpy(wh->Subchunk1ID, &"fmt ", 4);
+    memcpy(wh->Subchunk1ID, &"fmt ", 4); //notice the space at the end!
     wh -> Subchunk1Size = 16;
-    
+
     return wh;
 }
 
