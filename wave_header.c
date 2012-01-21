@@ -31,7 +31,7 @@ waveFormatHeader_t * stereo16bit44khzWaveHeader(){
 }
 
 void setLengthForWaveFormatHeader(waveFormatHeader_t * wh, size_t numberOfFrames){
-    wh -> ChunkSize = (40 - 8) + wh -> Subchunk2Size; //header-8 + data size; header size is always 40 for stereo16bit44khz
+    wh -> ChunkSize = 36 + wh -> Subchunk2Size; //header-8 + data size; header size is always 40 for stereo16bit44khz
     wh -> Subchunk2Size = numberOfFrames * wh->NumChannels * wh->BitsPerSample/8;  
 }
 
