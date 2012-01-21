@@ -37,7 +37,9 @@ Rewrite `writeWaveHeaderToFile` to write member-by-member instead of just ploppi
 ## Alternatives:
 
 On Osx, *nix:
-  libsndfile (http://www.mega-nerd.com/libsndfile/) offers reading **and** writing.  Installs system-wide and is quite large.  Pretty easy to use, but GPL
-  
+
+* libsndfile (http://www.mega-nerd.com/libsndfile/) offers reading **and** writing.  Installs system-wide and is quite large.  Pretty easy to use, but GPL
+* gstreamer ( http://gstreamer.freedesktop.org/ ) offers a whole media graph-processing framework.
 On Osx:
-  ExtAudioFile, though it is annoying to use if your needs are trivial it does offer lots of flexibility.
+
+* ExtAudioFile, though it is annoying to use if your needs are trivial it does offer lots of flexibility.
